@@ -2,11 +2,11 @@
 This projects stores all the assignments of Computer Organization and Assembly Language I have covered so far being a student of Bacholers in Computer Science at FAST NUCES Lahore 
 # COAL – Assembly Language Programs
 
-*Name:* YOUR NAME  
-*Roll No:* YOUR ROLL NO
+Name: Aaliyan Aziz 
+Roll No: L250718
 
 ## Description
-Assignment3/viewer.asm is a 16-bit 8088 program that builds a text viewport
+Assignment3/Q2.asm is a 16-bit 8088 program that builds a text viewport
 directly in video memory (0xB800):
 
 - bordered double-line window (rows 3–21, cols 8–72) with a centred title banner (0x1E)
@@ -24,11 +24,11 @@ save/restore registers and clean up with ret n.
 
 ## Assemble and run
 
-nasm Assignment3/viewer.asm -o viewer.com
+nasm Assignment3/Q2.asm -o Q2.com
 dosbox
 Z:\> mount c path\to\folder
 Z:\> c:
-C:\> viewer.com
+C:\> Q2.com
 
 Press a key to step through: initial view → scrolled view → highlighted view + status bar.
 
@@ -37,7 +37,7 @@ Press a key to step through: initial view → scrolled view → highlighted view
 COAL/
 ├── README.md
 └── Assignment3/
-    └── viewer.asm
+    └── Q2.asm
 
 
 ## Output screenshots
