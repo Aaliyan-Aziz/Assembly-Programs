@@ -41,8 +41,6 @@ COAL/
 
 
 ## Output screenshots
-/step1.png, step2.png
+![Step 1](step%201.png)
+![Step 2](step%202.png)
 
-![step 1](screenshots/step1.png)
-![step 2](screenshots/step2.png)
-![step 3](screenshots/step3.png)
