@@ -36,6 +36,8 @@ Press a key to step through: initial view → scrolled view → highlighted view
 
 COAL/
 ├── README.md
+├── step 1.png
+├── step 2.png
 └── Assignment3/
     └── Q2.asm
 
