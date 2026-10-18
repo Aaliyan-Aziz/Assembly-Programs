@@ -6,9 +6,15 @@ Name: Aaliyan Aziz
 Roll No: L250718
 
 ## Description
+Assignment2/Q4.asm is a 16-bit x86 program that runs a small ML-style classifier for network activity.
+- Each observation is a packed 16-bit value (6-5-5 bits: Connection Rate, Failed Attempts, Payload Entropy), extracted with shifts and masks.
+- The features are centred (X1 = rate - 20, X2 = failed - 8, X3 = entropy - 16).
+- Signed byte weights are sign-extended with CBW and used to compute NORMAL, SUSPICIOUS and ATTACK scores with IMUL.
+- The largest score sets the Prediction Flag (1 = NORMAL, 2 = SUSPICIOUS, 3 = ATTACK), with ties going to the lower class.
+- A loop over numObs processes every observation.
+  
 Assignment3/Q2.asm is a 16-bit 8088 program that builds a text viewport
 directly in video memory (0xB800):
-
 - bordered double-line window (rows 3–21, cols 8–72) with a centred title banner (0x1E)
 - multi-line document streamed into the window with LODSB/STOSW
 - scroll_window_up scrolls only the window interior (MOVSW + row strides, STOSW to blank)
@@ -23,7 +29,7 @@ save/restore registers and clean up with ret n.
 - DOSBox
 
 ## Assemble and run
-
+nasm Assignment2/Q4.asm -o Q4.com
 nasm Assignment3/Q2.asm -o Q2.com
 dosbox
 Z:\> mount c path\to\folder
@@ -36,6 +42,8 @@ Press a key to step through: initial view → scrolled view → highlighted view
 
 COAL/
 ├── README.md
+└── Assignment2/
+    └── Q4.asm
 ├── step 1.png
 ├── step 2.png
 └── Assignment3/
